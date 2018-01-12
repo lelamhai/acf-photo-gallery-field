@@ -12,7 +12,7 @@ function acf_photo_gallery_save( $post_id ){
 	remove_action( 'save_post', 'acf_photo_gallery_save' );
 
 	$field = isset($_POST['acf-photo-gallery-field-id'])? $_POST['acf-photo-gallery-field-id']: null;
-	if( count($field) ){
+	if( $field != null && count($field) ){
 		//file_put_contents( dirname(__FILE__) . 'dump.php', print_r(count($field), true));
 		foreach($field as $k => $v ){
 			$field_id = isset($_POST['acf-photo-gallery-field-id'][$k])? $_POST['acf-photo-gallery-field-id'][$k]: null;
