@@ -8,10 +8,15 @@
     ],
     "repositories" : [
           {
-               "type" : "git",
+               "type" : "composer",
                "url"  : "https://wpackagist.org"
-          }
+          },
+          {
+            "type": "git",
+            "url": "https://github.com/lelamhai/acf-photo-gallery-field"
+        }
      ],
+     "minimum-stability": "dev",
      "extra" : {
           "installer-paths" : {
                "wp-content/plugins/{$name}/" : ["type:wordpress-plugin"]
