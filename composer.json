@@ -1,0 +1,21 @@
+{
+    "name": "lelamhai/acf-photo-gallery-field",
+    "authors": [
+        {
+            "name": "Hải Lê Lam",
+            "email": "leelamhair@gmail.com"
+        }
+    ],
+    "repositories" : [
+          {
+               "type" : "git",
+               "url"  : "https://wpackagist.org"
+          }
+     ],
+     "extra" : {
+          "installer-paths" : {
+               "wp-content/plugins/{$name}/" : ["type:wordpress-plugin"]
+          }
+     }
+  
+}
