@@ -1,14 +1,9 @@
 {
     "name": "lelamhai/acf-photo-gallery-field",
-    "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
-    "keywords": ["log", "logging", "psr-3"],
-    "homepage": "https://github.com/lelamhai/acf-photo-gallery-field",
-    "type": "library",
-    "license": "MIT",
     "authors": [
         {
-            "name": "Hải Lê Lam",
-            "email": "leelamhair@gmail.com"
+            "name": "Amy (Haywood) Dutton",
+            "email": "amy@ahhacreative.com"
         }
     ],
     "repositories" : [
@@ -17,15 +12,25 @@
                "url"  : "https://wpackagist.org"
           },
           {
-            "type": "git",
-            "url": "https://github.com/lelamhai/acf-photo-gallery-field"
-        }
+               "type" : "vcs",
+               "url" : "https://github.com/lelamhai/acf-photo-gallery-field.git"
+          }
      ],
-     "minimum-stability": "dev",
      "extra" : {
           "installer-paths" : {
-               "wp-content/plugins/{$name}/" : ["type:wordpress-plugin"]
+               "wp-content/plugins/{$name}/" : ["type:wordpress-plugin"],
+               "wp-content/themes/{$name}/" : ["type:wordpress-theme"]
           }
-     }
+     },
+    "minimum-stability": "dev",
+    "require": {
+         "wpackagist-plugin/intuitive-custom-post-order" : "3.1.*",
+         "wpackagist-plugin/wordpress-seo" : "5.*",
+         "wpackagist-plugin/wp-help" : "1.5.*",
+         "wpackagist-plugin/acf-content-analysis-for-yoast-seo" : "2.0.*",
+         "wpackagist-plugin/minqueue" : "1.1.*",
+         "ahhacreative/ahha_plugin_gravityforms" : "1.*",
+         "ahhacreative/ahha_plugin_acf" : "5.2.*"
+    }
   
 }
